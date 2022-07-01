@@ -46,7 +46,7 @@ bash run_ml1m.sh
 bash run_loseit.sh
 bash run_worldnews.sh
 ```
-![](./img/restable.png)
+![](./img/res_table.png)
 
 ## Acknowledgement: The code is developed based on part of the code in the following papers:
 ```linux
