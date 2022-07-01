@@ -17,9 +17,11 @@ Most GNN-based recommendation systems perform message-passing by directly applyi
 
 Specifically, we demystify the collaborations captured by LightGCN by answering the following two questions:
 - **How does the message-passing captures collaborative effect?** We find that the L-layer LightGCN-based message-passing captures and leverages collaborations between nodes within L-hops neighborhoods of the center user and item. We also theoretically derive the strength of the captured collaborations.
+
 ![](./img/collaboration_github.png)
 
 - **Does the captured collaboration really help the prediction of users' ranking?** We propose a new recommendation-tailored topological metric, Common Interacted Ratio (CIR), and empirically find that higher CIR leads to more benefits to users' ranking.
+
 ![](./img/CIR_github.png)
 
 Based on our theoretical and empirical analysis, we incorporate CIR into the message-passing and ultimately propose a novel class of Collaboration-Aware Graph Convolutional Networks, namely Collaboration-Aware Graph Convolutional Network (CAGCN) and its augmented version (CAGCN*), both of which are able to **selectively pass information of neighbors based on their CIR via the designed Collaboration-Aware Graph Convolution**. The whole framework is as follows:
