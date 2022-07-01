@@ -22,6 +22,7 @@ Specifically, we demystify the collaborations captured by LightGCN by answering 
 
 ![](./img/analysis_github.png)
 
+## Framework
 Based on our theoretical and empirical analysis, we incorporate CIR into the message-passing and ultimately propose a novel class of Collaboration-Aware Graph Convolutional Networks, namely Collaboration-Aware Graph Convolutional Network (CAGCN) and its augmented version (CAGCN*), both of which are able to **selectively pass information of neighbors based on their CIR via the designed Collaboration-Aware Graph Convolution**. We also propose a brandly new type of graph isomorphism for bipartite graphs and theoretically prove that **the designed CAGCN\* can go beyond 1-WL test in distinguishing subtree-isomorphic(subgraph-isomorphic) graphs yet not bipartite-subgraph-isomorphic graphs**. The whole framework and the superiority of CAGCN* over 1-WL are as follows:
 ![](./img/1wl_github.png)
 
