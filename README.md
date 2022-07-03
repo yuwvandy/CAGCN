@@ -50,7 +50,7 @@ bash run_xxx.sh
 ```
 
 ## Result
-Here we list the performance of our models CAGCN(*) with different topological variants. To reproduce the table, please run the following command:
+Here we list the performance of our models CAGCN(*) with different topological variants. To reproduce the performance and running time in the following Table, please run the following commands:
 ```linux
 bash run_gowalla.sh
 bash run_yelp.sh
