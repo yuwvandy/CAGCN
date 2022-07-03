@@ -4,7 +4,7 @@ Recommendation Systems"]().
 
 **If you use this code, please consider citing:**
 ```linux
-@inproceedings{fairview,
+@inproceedings{CAGCN,
   author={Wang, Yu and Zhao, Yuying and Zhang, Yi and Derr, Tyler},
   title={Collaboration-Aware Graph Convolutional Networks for Recommendation Systems},
   booktitle={Arxiv},
