@@ -108,6 +108,7 @@ We demonstrate the superority of CAGCN(*) on six datasets: Gowalla, Yelp2018, Am
 ```linux
 bash run_xxx.sh
 ```
+We have matrix-formed and node-wise calculation of CIR. The matrix-formed way is faster while requires more RAM while the node-wise calculation is slower but requires less RAM.
 
 ## Result
 Here we list the performance of our models CAGCN(*) with different topological variants. To reproduce the performance and running time in the following Table, please run the following commands:
@@ -120,6 +121,7 @@ bash run_loseit.sh
 bash run_worldnews.sh
 ```
 ![](./img/tab_res.png)
+![](./img/time_quick.png)
 
 ## Acknowledgement: The code is developed based on part of the code in the following papers:
 ```linux
