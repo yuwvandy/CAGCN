@@ -108,7 +108,15 @@ We demonstrate the superority of CAGCN(*) on six datasets: Gowalla, Yelp2018, Am
 ```linux
 bash run_xxx.sh
 ```
-We have matrix-formed and node-wise calculation of CIR. The matrix-formed way is faster while requires more RAM while the node-wise calculation is slower but requires less RAM.
+We have matrix-formed and node-wise calculation of CIR. The matrix-formed way is faster while requires more RAM while the node-wise calculation is slower but requires less RAM. To vary between these two modes, change the line in main.py/main_fusion.py as follows:
+```linux
+if args.dataset in ['amazon']:
+    cal_trend = co_ratio_deg_user_jacard_sp
+else:
+    cal_trend = co_ratio_deg_user_jacard
+```
+- co_ratio_deg_user_jacard_sp: node-wise calculation
+- co_ratio_deg_user_jacard: matrix-formed calculation
 
 ## Result
 Here we list the performance of our models CAGCN(*) with different topological variants. To reproduce the performance and running time in the following Table, please run the following commands:
