@@ -39,8 +39,9 @@ The default version of python we use is 3.8.10. Please install all necessary pyt
 
 ## Data
 We demonstrate the superority of CAGCN(*) on six datasets: Gowalla, Yelp2018, Amazon-book, Ml-1M, Loseit and Worldnews.
-- The train1.txt/test1.txt: the observed and unobserved user-item interactions. 
+- The train1.txt/test1.txt: the observed and unobserved user-item interaction pairs. 
 - co_ratio_edge_weight_x.pt: the precalculated Common Interacted Ratio (CIR) based on x, which is selected from: **Jaccard Similarity (JC), Salton Cosine Similarity (SC), Leicht-Holme-Nerman (LHN), and Common Neighbors (CN)**.
+
 
 ## Precalculating CIR for your own dataset
 **Note that we also provide the code for readers to pre-calculate the co_ratio_edge_weight_x.pt of their own datasets.** To use it, please set up a separate dataset repo with the training and testing interactions and create your own bash.sh file:
