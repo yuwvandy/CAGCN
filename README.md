@@ -41,6 +41,66 @@ The default version of python we use is 3.8.10. Please install all necessary pyt
 We demonstrate the superority of CAGCN(*) on six datasets: Gowalla, Yelp2018, Amazon-book, Ml-1M, Loseit and Worldnews.
 - The train1.txt/test1.txt: the observed and unobserved user-item interaction pairs. 
 - co_ratio_edge_weight_x.pt: the precalculated Common Interacted Ratio (CIR) based on x, which is selected from: **Jaccard Similarity (JC), Salton Cosine Similarity (SC), Leicht-Holme-Nerman (LHN), and Common Neighbors (CN)**.
+- The correct directory structure should be set as follows:
+```linux
+├── data
+│   ├── amazon
+│   │   ├── co_ratio_edge_weight_co.pt
+│   │   ├── co_ratio_edge_weight_jc.pt
+│   │   ├── co_ratio_edge_weight_lhn.pt
+│   │   ├── co_ratio_edge_weight_sc.pt
+│   │   ├── test1.txt
+│   │   └── train1.txt
+│   ├── gowalla
+│   │   ├── co_ratio_edge_weight_co.pt
+│   │   ├── co_ratio_edge_weight_jc.pt
+│   │   ├── co_ratio_edge_weight_lhn.pt
+│   │   ├── co_ratio_edge_weight_sc.pt
+│   │   ├── test1.txt
+│   │   └── train1.txt
+│   ├── loseit
+│   │   ├── co_ratio_edge_weight_co.pt
+│   │   ├── co_ratio_edge_weight_jc.pt
+│   │   ├── co_ratio_edge_weight_lhn.pt
+│   │   ├── co_ratio_edge_weight_sc.pt
+│   │   ├── test1.txt
+│   │   └── train1.txt
+│   ├── ml-1m
+│   │   ├── co_ratio_edge_weight_co.pt
+│   │   ├── co_ratio_edge_weight_jc.pt
+│   │   ├── co_ratio_edge_weight_lhn.pt
+│   │   ├── co_ratio_edge_weight_sc.pt
+│   │   ├── test1.txt
+│   │   └── train1.txt
+│   ├── worldnews
+│   │   ├── co_ratio_edge_weight_co.pt
+│   │   ├── co_ratio_edge_weight_jc.pt
+│   │   ├── co_ratio_edge_weight_lhn.pt
+│   │   ├── co_ratio_edge_weight_sc.pt
+│   │   ├── test1.txt
+│   │   └── train1.txt
+│   └── yelp2018
+│       ├── co_ratio_edge_weight_co.pt
+│       ├── co_ratio_edge_weight_jc.pt
+│       ├── co_ratio_edge_weight_lhn.pt
+│       ├── co_ratio_edge_weight_sc.pt
+│       ├── test1.txt
+│       └── train1.txt
+├── dataprocess.py
+├── evaluation.py
+├── main_fusion.py
+├── main.py
+├── model.py
+├── parse.py
+├── run_amazon.sh
+├── run_gowalla.sh
+├── run_loseit.sh
+├── run_ml1m.sh
+├── run_world_news.sh
+├── run_yelp.sh
+└── utils.py
+```
+
 
 
 ## Precalculating CIR for your own dataset
