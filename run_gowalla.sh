@@ -24,8 +24,17 @@ python main.py --dataset='gowalla' --model='CAGCN'  --type='co' --trend_coeff=1 
 echo "=====CAGCN-jc fusion====="
 python main_fusion.py --dataset='gowalla' --model='CAGCN'  --type='jc' --trend_coeff=1.2 --l2=1e-3
 
+echo "=====CAGCN-jc fusion - 256 (Compared with GTN)====="
+python main_fusion.py --dataset='gowalla' --model='CAGCN'  --type='jc' --trend_coeff=1.2 --l2=1e-3 --embedding_dim=256
+
 echo "=====CAGCN-sc fusion====="
 python main_fusion.py --dataset='gowalla' --model='CAGCN'  --type='sc' --trend_coeff=1.2 --l2=1e-3
 
+echo "=====CAGCN-sc fusion - 256 (Compared with GTN)====="
+python main_fusion.py --dataset='gowalla' --model='CAGCN'  --type='sc' --trend_coeff=1.2 --l2=1e-3 --embedding_dim=256
+
 echo "=====CAGCN-lhn fusion====="
 python main_fusion.py --dataset='gowalla' --model='CAGCN'  --type='lhn' --trend_coeff=1 --l2=1e-3
+
+echo "=====CAGCN-lhn fusion - 256 (Compared with GTN)====="
+python main_fusion.py --dataset='gowalla' --model='CAGCN'  --type='lhn' --trend_coeff=1 --l2=1e-3 --embedding_dim=256
