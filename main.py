@@ -31,7 +31,10 @@ def run(model, optimizer, train_cf, clicked_set, user_dict, adj, args):
 
     if args.model == 'CAGCN':
         if args.type == 'jc':
-            cal_trend = co_ratio_deg_user_jacard
+            if args.dataset in ['amazon']:
+                cal_trend = co_ratio_deg_user_jacard_sp
+            else:
+                cal_trend = co_ratio_deg_user_jacard
         elif args.type == 'co':
             if args.dataset in ['amazon']:
                 cal_trend = co_ratio_deg_user_common_sp
