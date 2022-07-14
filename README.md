@@ -1,6 +1,6 @@
 # CAGCN
 This repository is an official PyTorch(Geometric) implementation of CAGCN (also includes the baseline implementation of MF/NGCF/LightGCN) in ["Collaboration-Aware Graph Convolutional Networks for
-Recommendation Systems"](https://drive.google.com/file/d/14bt1b7qWdkS5aaf4AV0DSP_xCHPwzbuO/view?usp=sharing).
+Recommendation Systems"](https://arxiv.org/abs/2207.06221).
 
 **If you use this code, please consider citing:**
 ```linux
