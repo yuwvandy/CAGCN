@@ -1,4 +1,5 @@
-# By default setting used in most literature, the data splitting is performed by randomly sampling for each node, certain amount of its neighbors to be training/validation/testing data. However, such splitting may cause the issue of data leakage where we use future links (training data contains future links) to predict past links (testing data contains past links). To handle this issue, we recollect the gowalla/yelp/amazon_book datasets and split them strictly according to time, which mimics the real scenarios.
+# Realistic setting (Training/Validation/Testing splitted by time)
+By default setting used in most literature, the data splitting is performed by randomly sampling for each node, certain amount of its neighbors to be training/validation/testing data. However, such splitting may cause the issue of data leakage where we use future links (training data contains future links) to predict past links (testing data contains past links). To handle this issue, we recollect the gowalla/yelp/amazon_book datasets and split them strictly according to time, which mimics the real scenarios.
 
 
 **If you use this code, please consider citing:**
