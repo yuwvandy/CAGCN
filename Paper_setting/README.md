@@ -114,7 +114,7 @@ bash run_ml1m.sh
 bash run_loseit.sh
 bash run_worldnews.sh
 ```
-![](./img/tab_res.png)
+![](./tab_res.png)
 
 ## Acknowledgement: The code is developed based on part of the code in the following papers:
 ```linux
