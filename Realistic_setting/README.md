@@ -30,7 +30,7 @@ We provide the preprocessing code in the notebook. Please follow instructions be
   * Download [[yelp_academic_dataset_review.json]](https://www.yelp.com/dataset/download) and put it in ./data/yelp/.
   * Run process_yelp.ipynb and you should get train/val/test.txt
 * **Amazon_book**
-  * Download [[Books_5.json]]() here and put it in ./data/amazon_book/.
+  * Download [[Books_5.json]](https://nijianmo.github.io/amazon/index.html) here (select Books and we use 5-core setting) and put it in ./data/amazon_book/.
   * Run process_amazon.ipynb and you should get train/val/test.txt
 
 In case the source dataset would be updated in the future, we also collect the current version used in this paper [[here]](https://www.dropbox.com/scl/fo/r8f0mad1u8cif062k1cv2/h?dl=0&rlkey=o48sfqa2quuz3ilk4eh7h7p1o). You can also download the datasets in this way.
