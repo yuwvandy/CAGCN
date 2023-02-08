@@ -1,5 +1,5 @@
 # Paper setting (links are randomly splitted into Training/Validation/Testing)
-Following default setting used in most literature, we collect all users' interactions and randomly split them into training/testing data. Note that this splitting may cause the issue of using future links to predict past links, which is a little bit unrealistic. For more realistic setting, please refer to realistic setting folder [[here]](../realistic_setting/).
+Following default setting used in most literature, we collect all users' interactions and randomly split them into training/testing data. Note that this splitting may cause the issue of using future links to predict past links, which is a little bit unrealistic. For more realistic setting, please refer to realistic setting folder [[here]](../Realistic_setting/).
 
 **If you use this code, please consider citing:**
 ```linux
