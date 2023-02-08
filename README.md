@@ -3,17 +3,17 @@ This repository is an official PyTorch(Geometric) implementation of CAGCN (also 
 Recommendation Systems"](https://arxiv.org/abs/2207.06221).
 
 We have two experimental settings based on how we split the data:
-* Paper setting: this setting is used in most previous literature (LightGCN, NGCF....), which is also used in our CAGCN paper. Note here the training/validation/testing edges are randomly splitted not strictly foloowing the time information. (We may end up with using future edges to predict history edges). See [[Paper_setting]](./Paper_setting/.) for more details.
+* Paper setting: this setting is used in most previous literature (LightGCN, NGCF....), which is also used in our CAGCN paper. Note here the training/testing edges are randomly splitted and hence not following the time information. We may end up with using future edges to predict history edges. See [[Paper_setting]](./Paper_setting/.) for more details.
 
-* Realistic setting: after notice this issue, we recollect the three datasets gowalla/yelp/amazon and split them strictly according to time. We also provide the code for preprocessing the data and the readers can modify it based on your own needs. See [[Realistic_setting]](./Realistic_setting/.) for more details.
+* Realistic setting: after notice the above issue, we recollect the three datasets gowalla/yelp/amazon and split them strictly according to time. We also provide the code for preprocessing the datasets and the readers can modify it based on your own needs. See [[Realistic_setting]](./Realistic_setting/.) for more details.
 
 **If you use this code, please consider citing:**
 ```linux
 @inproceedings{CAGCN,
   author={Wang, Yu and Zhao, Yuying and Zhang, Yi and Derr, Tyler},
   title={Collaboration-Aware Graph Convolutional Networks for Recommendation Systems},
-  booktitle={Arxiv},
-  year = {2022}
+  booktitle={Proceedings of the ACM Web Conference 2023},
+  year = {2023}
 }
 ```
 
