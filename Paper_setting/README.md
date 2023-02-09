@@ -1,17 +1,6 @@
 # Paper setting (links are randomly splitted into Training/Validation/Testing)
 Following default setting used in most literature, we collect all users' interactions and randomly split them into training/testing data. Note that this splitting may cause the issue of using future links to predict past links, which is a little bit unrealistic. For more realistic setting, please refer to realistic setting folder [[here]](../Realistic_setting/).
 
-**If you use this code, please consider citing:**
-```linux
-@inproceedings{CAGCN,
-  author={Wang, Yu and Zhao, Yuying and Zhang, Yi and Derr, Tyler},
-  title={Collaboration-Aware Graph Convolutional Networks for Recommendation Systems},
-  booktitle={Proceedings of the ACM Web Conference 2023},
-  year = {2023}
-}
-```
-
-
 
 ## Configuration
 The default version of python we use is 3.8.10. Please install all necessary python packages via:
