@@ -1,16 +1,6 @@
 # Node classification
 Here we experiment our CAGC on node classification by equipping it with GCN model.
 
-**If you use this code, please consider citing:**
-```linux
-@inproceedings{CAGCN,
-  author={Wang, Yu and Zhao, Yuying and Zhang, Yi and Derr, Tyler},
-  title={Collaboration-Aware Graph Convolutional Networks for Recommendation Systems},
-  booktitle={Proceedings of the ACM Web Conference 2023},
-  year = {2023}
-}
-```
-
 ## Configuration
 Similarly as the configuration used for experimental setting in the paper, the default version of python we use is 3.8.10. Please install all necessary python packages via:
 ```linux
