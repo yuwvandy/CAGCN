@@ -7,6 +7,8 @@ We have two experimental settings based on how we split the data:
 
 * Realistic setting: after notice the above issue, we recollect the three datasets gowalla/yelp/amazon and split them strictly according to time. We also provide the code for preprocessing the datasets and the readers can modify it based on your own needs. See [[Realistic_setting]](./Realistic_setting/.) for more details.
 
+* Node Classification: based on the reviewers' suggestion, we further incorporate our Collaboration-aware Graph Convolution into node classification. Since our paper is mainly focused on recommendation, we only experiment this naive model on Cora/Citeseer and also achieves performance gain. See [[Node classification]](./Node_classification/.) for more details.
+
 **If you use this code, please consider citing:**
 ```linux
 @inproceedings{CAGCN,
