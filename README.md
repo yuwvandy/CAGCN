@@ -20,14 +20,14 @@ We have two experimental settings based on how we split the data:
 ```
 
 ## Motivation
-Most GNN-based recommendation systems perform message-passing by directly applying traditional GNN-convolutions. How does the message-passing captures collaborative effect? Are the message-passing by traditional GNN-convolutions really beneficial to users' ranking? This paper will take you to demystify the collaborations captured by traditional GNN-convolutions.
+Most GNN-based recommendation systems perform message-passing by directly applying traditional GNN-convolutions. How does the message-passing captures collaborative effect? Are the message-passing by traditional GNN-convolutions really the optimal one to users' ranking? How does 1-WL test find application in link prediction/recommendation? This paper will take you to demystify the collaborations captured by traditional GNN-convolutions.
 
 Specifically, we demystify the collaborations captured by LightGCN by answering the following two questions:
 - **How does the message-passing captures collaborative effect?** We find that the L-layer LightGCN-based message-passing captures and leverages collaborations between nodes within L-hops neighborhoods of the center user and item. We also theoretically derive the strength of the captured collaborations.
 
 - **Does the captured collaboration really help the prediction of users' ranking?** We propose a new recommendation-tailored topological metric, Common Interacted Ratio (CIR), and empirically find that higher CIR leads to more benefits to users' ranking.
 
-![](./img/analysis_github.png)
+![](./img/analysis.png)
 
 ## Framework
 Based on our theoretical and empirical analysis, we incorporate CIR into the message-passing and ultimately propose a novel class of Collaboration-Aware Graph Convolutional Networks, namely Collaboration-Aware Graph Convolutional Network (CAGCN) and its augmented version (CAGCN*), both of which are able to **selectively pass information of neighbors based on their CIR via the designed Collaboration-Aware Graph Convolution**. We also propose a brandly new type of graph isomorphism for bipartite graphs and theoretically prove that **the designed CAGCN\* can go beyond 1-WL test in distinguishing subtree-isomorphic(subgraph-isomorphic) graphs yet not bipartite-subgraph-isomorphic graphs**. The whole framework and the superiority of CAGCN* over 1-WL are as follows:
