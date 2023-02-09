@@ -16,7 +16,7 @@ Similarly as the configuration used for experimental setting in the paper, the d
 ## Data
 We provide the preprocessing code in the notebook. Please follow instructions below for accessing the datasets and preprocessing them.
 * **Gowalla**
-  * Download gowalla.inter here and put it in ./data/gowalla/.
+  * Download loc-gowalla_totalCheckins.txt.gz [[here]](https://snap.stanford.edu/data/loc-gowalla.html) and following instructions [[here]](https://github.com/RUCAIBox/RecSysDatasets/blob/master/conversion_tools/usage/Gowalla.md) to process it and obtain gowalla.inter file. Put gowalla.inter file in ./data/gowalla/.
   * Run process_gowalla.ipynb and you should get train/val/test.txt
 * **Yelp**
   * Download [[yelp_academic_dataset_review.json]](https://www.yelp.com/dataset/download) and put it in ./data/yelp/.
