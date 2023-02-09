@@ -3,7 +3,7 @@ This repository is an official PyTorch(Geometric) implementation of CAGCN (also 
 Recommendation Systems"](https://arxiv.org/abs/2207.06221).
 
 We have two experimental settings based on how we split the data:
-* Paper setting: this setting is used in most previous literature (LightGCN, NGCF....), which is also used in our CAGCN paper. Note here the training/testing edges are randomly splitted and hence not following the time information. We may end up with using future edges to predict history edges. See [[Paper_setting]](./Paper_setting/.) for more details.
+* Paper setting: this setting is used in most previous literature (LightGCN, NGCF....), which is also used in our CAGCN paper. Note here the training/testing edges are randomly split and hence not following the time information. We may end up with using future edges to predict history edges. See [[Paper_setting]](./Paper_setting/.) for more details.
 
 * Realistic setting: after notice the above issue, we recollect the three datasets gowalla/yelp/amazon and split them strictly according to time. We also provide the code for preprocessing the datasets and the readers can modify it based on your own needs. See [[Realistic_setting]](./Realistic_setting/.) for more details.
 
