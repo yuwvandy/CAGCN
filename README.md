@@ -11,11 +11,11 @@ We have two experimental settings based on how we split the data:
 
 **If you use this code, please consider citing:**
 ```linux
-@inproceedings{CAGCN,
-  author={Wang, Yu and Zhao, Yuying and Zhang, Yi and Derr, Tyler},
+@article{wang2022collaboration,
   title={Collaboration-Aware Graph Convolutional Networks for Recommendation Systems},
-  booktitle={Proceedings of the ACM Web Conference 2023},
-  year = {2023}
+  author={Wang, Yu and Zhao, Yuying and Zhang, Yi and Derr, Tyler},
+  journal={arXiv preprint arXiv:2207.06221},
+  year={2022}
 }
 ```
 
