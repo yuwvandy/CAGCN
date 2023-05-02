@@ -11,12 +11,19 @@ We have two experimental settings based on how we split the data:
 
 **If you use this code, please consider citing:**
 ```linux
-@article{wang2022collaboration,
-  title={Collaboration-Aware Graph Convolutional Networks for Recommendation Systems},
-  author={Wang, Yu and Zhao, Yuying and Zhang, Yi and Derr, Tyler},
-  journal={arXiv preprint arXiv:2207.06221},
-  year={2022}
+@inproceedings{10.1145/3543507.3583229,
+author = {Wang, Yu and Zhao, Yuying and Zhang, Yi and Derr, Tyler},
+title = {Collaboration-Aware Graph Convolutional Network for Recommender Systems},
+year = {2023},
+isbn = {9781450394161},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543507.3583229},
+doi = {10.1145/3543507.3583229},
+location = {Austin, TX, USA},
+series = {WWW '23}
 }
+
 ```
 
 ## Motivation
