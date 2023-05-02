@@ -1,6 +1,6 @@
 # CAGCN
 This repository is an official PyTorch(Geometric) implementation of CAGCN (also includes the baseline implementation of MF/NGCF/LightGCN) in ["Collaboration-Aware Graph Convolutional Networks for
-Recommendation Systems"](https://arxiv.org/abs/2207.06221).
+Recommendation Systems"](https://dl.acm.org/doi/abs/10.1145/3543507.3583229).
 
 We have two experimental settings based on how we split the data:
 * Paper setting: this setting is used in most previous literature (LightGCN, NGCF....), which is also used in our CAGCN paper. Note here the training/testing edges are randomly split and hence not following the time information. We may end up with using future edges to predict history edges. See [[Paper_setting]](./Paper_setting/.) for more details.
